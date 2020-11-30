@@ -98,8 +98,8 @@ while Atm:
                         
                         if verify_newpin == updated_pin:
                             atm.setNewPin(verify_newpin)
-                            print("pin baru anda sukses!")
-                            input()
+                            m.alert("pin baru anda sukses!")
+                            input("Press Enter. back to Login.")
                             changePin = False
                             Menu = False
                             Verify = False
