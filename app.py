@@ -58,7 +58,7 @@ while Atm:
                     m.alert("Saldo awal anda adalah: Rp. " + str(atm.checkBalance()) + "")
                     input("Press Enter.")
 
-                if nominal < atm.checkBalance():
+                if nominal <= atm.checkBalance():
                     atm.witdrawalBalance(nominal)
                     m.alert("Transaksi debet berhasil!\n---\nSaldo sisa sekarang: Rp. " + str(atm.checkBalance()) + "")
                     input("Press Enter to back main menu")
